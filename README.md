@@ -2,12 +2,11 @@
 
 You can install this plugin if you have VQMOD or OCMOD
 
-# VQMOD:
+# Installing via VQMOD:
 Upload the files on your website root folder (like public_html , httpdocs or www)
 
-# OCMOD:
-Zip folder contains of "ocmod" and install it through opencart v2.0+
-
+# Installing via OCMOD (Modern way):
+Zip folder contains of "ocmod" and select the zip in the Modification install through opencart v2.0+
 
 # General Information
  
