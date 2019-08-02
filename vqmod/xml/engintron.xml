@@ -9,7 +9,7 @@
       <search position="after"><![CDATA[function index() {]]></search>
       <add><![CDATA[
        
-	   //$this->response->addHeader('Caching-Opencart: Web-expert.gr VQMOD');
+	   //$this->response->addHeader('Caching-Opencart: Web-expert.gr');
 		if($this->cart->hasProducts() || $this->customer->isLogged())
 		{
 			$this->response->addHeader('Cache-Control: private');
