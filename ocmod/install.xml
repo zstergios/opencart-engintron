@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modification>
+  <generator>Created using by OpenIX - https://openix.io/en/tool/opencart/ocmod</generator>
+  <name>Engintron - NGINX - Varnish</name>
+  <version>1.0.0</version>
+  <code>engintron_nginx_varnish</code>
+  <author>Stergios Zgouletas</author>
+  <link>https://www.web-expert.gr</link>
+
+  <file path="catalog/controller/common/header.php">
+    <operation>
+      <search><![CDATA[function index() {]]></search>
+      <add position="after"><![CDATA[if($this->cart->hasProducts() || $this->customer->isLogged())
+		{
+			$this->response->addHeader('Cache-Control: private');
+			$this->response->addHeader('X-Logged-In: True');
+		}
+		else
+		{
+			$this->response->addHeader('Cache-Control: public');
+			$this->response->addHeader('X-Logged-In: False');
+		}]]></add>
+    </operation>
+
+  </file>
+
+</modification>
