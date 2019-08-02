@@ -1,5 +1,11 @@
 # Opencart Engintron (NGINX) CACHING
+
+VQMOD:
 Upload the files on your website root folder (like public_html or httpdocs)
+
+OCMOD:
+Zip folder contains of "ocmod" and install it through opencart v2.0+
+
  
 The "engintron.xml" will add the right caching headers to your installation making it Nginx / Varnish friendly. For example if a logged user is viewing your website tells the Nginx / Varnish not to cache, also when a guest has added a product in the cart.
 
